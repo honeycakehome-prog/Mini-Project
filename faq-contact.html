@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา & คำถามที่พบบ่อย - บีทู สันติธรรม เชียงใหม่</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #fff;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background-color: #f9f9f9;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background-color: #fff;
+            color: #555;
+            border-top: 1px solid transparent;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 15px 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">B2 SANTITHAM</a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="rooms.html">ห้องพัก</a></li>
+                <li><a href="faq-contact.html" class="active">ติดต่อเรา / FAQ</a></li>
+                <li><a href="booking.html" class="btn">จองเลย</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header"
+        style="height: 30vh; background: var(--primary-color); display: flex; align-items: center; justify-content: center; color: white;">
+        <h1>ติดต่อเรา & FAQ</h1>
+    </div>
+
+    <section class="section-padding">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; gap: 50px;">
+                <!-- Contact Info -->
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 class="section-title">ช่องทางติดต่อ</h2>
+                    <p style="margin-bottom: 30px;">มีคำถามเพิ่มเติม? ติดต่อเราได้โดยตรงตามช่องทางด้านล่าง</p>
+
+                    <div style="margin-bottom: 20px; display: flex; gap: 15px;">
+                        <i class="fas fa-map-marker-alt"
+                            style="color: var(--accent-color); font-size: 1.2rem; margin-top: 5px;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">ที่อยู่</h4>
+                            <p>โรงแรมบีทู สันติธรรม<br>ถนนสันติธรรม, ช้างเผือก,<br>เชียงใหม่ 50300, ประเทศไทย</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px; display: flex; gap: 15px;">
+                        <i class="fas fa-phone"
+                            style="color: var(--accent-color); font-size: 1.2rem; margin-top: 5px;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">โทรหาเรา</h4>
+                            <p>+66 52 000 000</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px; display: flex; gap: 15px;">
+                        <i class="fas fa-envelope"
+                            style="color: var(--accent-color); font-size: 1.2rem; margin-top: 5px;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">อีเมล</h4>
+                            <p>info@b2santitham.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Google Map Link -->
+                    <a href="https://www.google.com/maps/place/โรงแรมบีทู+สันติธรรม+(วัดเจ็ดยอด)+บูติค+แอนด์+บัดเจท/@18.8041608,98.9710639,18z/data=!4m13!1m2!2m1!1zYjIg4Liq4Lix4LiZ4LiV4Li04LiY4Lij4Lij4Lih!3m9!1s0x30da3af20d7e9271:0x9dadf5e8b1b4e412!5m2!4m1!1i2!8m2!3d18.8089171!4d98.9790222!15sCh5iMiDguKrguLHguJnguJXguLTguJjguKPguKPguKFaISIfYjIg4Liq4Lix4LiZ4LiV4Li0IOC4mOC4o-C4o-C4oZIBBWhvdGVs4AEA!16s%2Fg%2F1q64hqzds?hl=th&authuser=1&entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
+                        target="_blank" style="text-decoration: none;">
+                        <div
+                            style="margin-top: 30px; height: 250px; background: #eee; display: flex; align-items: center; justify-content: center; color: #555; border: 2px dashed #ccc; transition: all 0.3s ease;">
+                            <i class="fas fa-map-marked-alt"
+                                style="font-size: 3rem; margin-right: 15px; color: var(--accent-color);"></i>
+                            <span style="font-size: 1.2rem; font-weight: 600;">ดูแผนที่บน Google Map</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- FAQ & Form -->
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 class="section-title">คำถามที่พบบ่อย</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            เวลาเช็คอินและเช็คเอาท์คือกี่โมง?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            เช็คอินได้ตั้งแต่เวลา 14:00 น. และเช็คเอาท์ก่อนเวลา 12:00 น. (เที่ยงวัน)
+                            การเช็คอินก่อนเวลานั้นขึ้นอยู่กับความพร้อมของห้องพัก
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            มีอาหารเช้าให้บริการหรือไม่?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            เราไม่มีห้องอาหารในโรงแรม
+                            แต่มีร้านกาแฟและร้านอาหารท้องถิ่นมากมายในย่านสันติธรรมที่สามารถเดินไปได้
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            มีที่จอดรถหรือไม่?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            ใช่ เรามีบริการที่จอดรถฟรีสำหรับแขกของเรา
+                            อย่างไรก็ตามที่จอดรถมีจำนวนจำกัดและให้บริการตามลำดับการมาถึง
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            อนุญาตให้นำสัตว์เลี้ยงเข้าพักหรือไม่?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            ขออภัย เราไม่อนุญาตให้นำสัตว์เลี้ยงเข้าพักที่ บีทู สันติธรรม เชียงใหม่
+                        </div>
+                    </div>
+
+                    <h3 style="margin: 40px 0 20px;">ส่งข้อความถึงเรา</h3>
+                    <form>
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <input type="text" placeholder="ชื่อของคุณ" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <input type="email" placeholder="อีเมลของคุณ" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <textarea rows="4" placeholder="ข้อความของคุณ" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">B2 SANTITHAM</a>
+                    <p style="margin-top: 15px;">สัมผัสประสบการณ์ที่ดีที่สุดในเชียงใหม่กับที่พักที่ทันสมัย สะดวกสบาย
+                        และราคาสบายกระเป๋า</p>
+                </div>
+                <div class="footer-col">
+                    <h4>เมนูลัด</h4>
+                    <ul>
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="rooms.html">ห้องพัก</a></li>
+                        <li><a href="booking.html">จองห้องพัก</a></li>
+                        <li><a href="faq-contact.html">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ติดต่อเรา</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> สันติธรรม, เชียงใหม่, ประเทศไทย</li>
+                        <li><i class="fas fa-phone"></i> +66 52 000 000</li>
+                        <li><i class="fas fa-envelope"></i> info@b2santitham.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 บีทู สันติธรรม เชียงใหม่. สงวนลิขสิทธิ์.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple FAQ Toggle Script
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

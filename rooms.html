@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ห้องพักของเรา - บีทู สันติธรรม เชียงใหม่</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">B2 SANTITHAM</a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="rooms.html" class="active">ห้องพัก</a></li>
+                <li><a href="faq-contact.html">ติดต่อเรา / FAQ</a></li>
+                <li><a href="booking.html" class="btn">จองเลย</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>ห้องพักของเรา</h1>
+            <p>ความสะดวกสบายและสไตล์ที่ลงตัวสำหรับนักเดินทางทุกคน</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <!-- Filter Mockup -->
+            <div style="margin-bottom: 40px; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                <select
+                    style="padding: 10px; border: 1px solid #ddd; border-radius: 4px; min-width: 150px; font-family: 'Prompt', sans-serif;">
+                    <option>ประเภทห้องพักทั้งหมด</option>
+                    <option>ซูพีเรีย</option>
+                    <option>ดีลักซ์</option>
+                    <option>สวีท</option>
+                </select>
+                <select
+                    style="padding: 10px; border: 1px solid #ddd; border-radius: 4px; min-width: 150px; font-family: 'Prompt', sans-serif;">
+                    <option>จำนวนผู้เข้าพัก</option>
+                    <option>1 ท่าน</option>
+                    <option>2 ท่าน</option>
+                    <option>3 ท่าน</option>
+                </select>
+                <button class="btn" style="padding: 10px 30px;">ค้นหา</button>
+            </div>
+
+            <div class="room-grid">
+                <!-- Room 1 -->
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Superior Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>ห้องซูพีเรีย คิง</h3>
+                        <p class="room-price">850 บาท / คืน</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                            ห้องพักแสนสบายพร้อมเตียงคิงไซส์ สิ่งอำนวยความสะดวกครบครัน และโต๊ะทำงาน
+                            เหมาะสำหรับนักเดินทางคนเดียวหรือคู่รัก
+                        </p>
+                        <div class="room-features">
+                            <span><i class="fas fa-user"></i> 2 ท่าน</span>
+                            <span><i class="fas fa-vector-square"></i> 24 ตร.ม.</span>
+                            <span><i class="fas fa-wifi"></i> ฟรี Wi-Fi</span>
+                        </div>
+                        <a href="room-detail.html" class="btn" style="width: 100%; text-align: center;">ดูรายละเอียด</a>
+                    </div>
+                </div>
+
+                <!-- Room 2 -->
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Deluxe Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>ห้องดีลักซ์ ทวิน</h3>
+                        <p class="room-price">950 บาท / คืน</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                            ห้องพักกว้างขวางพร้อมเตียงคู่สองเตียง มีมุมนั่งเล่นและหน้าต่างบานใหญ่ชมวิวเมือง
+                        </p>
+                        <div class="room-features">
+                            <span><i class="fas fa-user"></i> 2 ท่าน</span>
+                            <span><i class="fas fa-vector-square"></i> 28 ตร.ม.</span>
+                            <span><i class="fas fa-tv"></i> สมาร์ททีวี</span>
+                        </div>
+                        <a href="room-detail.html" class="btn" style="width: 100%; text-align: center;">ดูรายละเอียด</a>
+                    </div>
+                </div>
+
+                <!-- Room 3 -->
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Suite">
+                    </div>
+                    <div class="room-info">
+                        <h3>เอ็กเซ็กคิวทีฟ สวีท</h3>
+                        <p class="room-price">1,200 บาท / คืน</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                            ห้องสวีทระดับพรีเมียมของเรา มอบพื้นที่กว้างขวางเป็นพิเศษ โซฟาเบด มินิบาร์
+                            และของใช้ในห้องน้ำระดับพรีเมียม
+                        </p>
+                        <div class="room-features">
+                            <span><i class="fas fa-user"></i> 3 ท่าน</span>
+                            <span><i class="fas fa-vector-square"></i> 35 ตร.ม.</span>
+                            <span><i class="fas fa-bath"></i> อ่างอาบน้ำ</span>
+                        </div>
+                        <a href="room-detail.html" class="btn" style="width: 100%; text-align: center;">ดูรายละเอียด</a>
+                    </div>
+                </div>
+
+                <!-- Room 4 -->
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Family Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>ห้องสำหรับครอบครัว</h3>
+                        <p class="room-price">1,500 บาท / คืน</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                            ออกแบบมาเพื่อครอบครัว มีเตียงคิงไซส์ 1 เตียงและเตียงเดี่ยว 2 เตียง
+                            พร้อมพื้นที่เก็บของกว้างขวาง
+                        </p>
+                        <div class="room-features">
+                            <span><i class="fas fa-user"></i> 4 ท่าน</span>
+                            <span><i class="fas fa-vector-square"></i> 40 ตร.ม.</span>
+                            <span><i class="fas fa-coffee"></i> เครื่องชงกาแฟ</span>
+                        </div>
+                        <a href="room-detail.html" class="btn" style="width: 100%; text-align: center;">ดูรายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">B2 SANTITHAM</a>
+                    <p style="margin-top: 15px;">สัมผัสประสบการณ์ที่ดีที่สุดในเชียงใหม่กับที่พักที่ทันสมัย สะดวกสบาย
+                        และราคาสบายกระเป๋า</p>
+                </div>
+                <div class="footer-col">
+                    <h4>เมนูลัด</h4>
+                    <ul>
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="rooms.html">ห้องพัก</a></li>
+                        <li><a href="booking.html">จองห้องพัก</a></li>
+                        <li><a href="faq-contact.html">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ติดต่อเรา</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> สันติธรรม, เชียงใหม่, ประเทศไทย</li>
+                        <li><i class="fas fa-phone"></i> +66 52 000 000</li>
+                        <li><i class="fas fa-envelope"></i> info@b2santitham.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 บีทู สันติธรรม เชียงใหม่. สงวนลิขสิทธิ์.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
