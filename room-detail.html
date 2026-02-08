@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ห้องซูพีเรีย คิง - บีทู สันติธรรม เชียงใหม่</title>
+    <title>ห้องซูพีเรีย คิง - สันติธรรม เชียงใหม่</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -62,7 +62,7 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">B2 SANTITHAM</a>
+            <a href="index.html" class="logo">SANTITHAM</a>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -75,24 +75,24 @@
         </div>
     </nav>
 
-    <div class="room-detail-hero"></div>
+    <div id="room-hero" class="room-detail-hero"></div>
 
     <section class="section-padding">
         <div class="container">
             <div style="display: flex; flex-wrap: wrap; gap: 50px;">
                 <div style="flex: 2; min-width: 300px;">
-                    <h1 style="font-size: 2.5rem; margin-bottom: 10px;">ห้องซูพีเรีย คิง</h1>
-                    <p class="room-price" style="font-size: 1.5rem; margin-bottom: 30px;">850 บาท <span
+                    <h1 id="room-name" style="font-size: 2.5rem; margin-bottom: 10px;">ห้องซูพีเรีย คิง</h1>
+                    <p id="room-price" class="room-price" style="font-size: 1.5rem; margin-bottom: 30px;">850 บาท <span
                             style="font-size: 1rem; color: #666; font-weight: 400;">/ คืน</span></p>
 
                     <h3>รายละเอียด</h3>
-                    <p style="margin-bottom: 30px; color: #555;">
+                    <p id="room-desc" style="margin-bottom: 30px; color: #555;">
                         สัมผัสความสะดวกสบายในห้องซูพีเรีย คิง ของเรา ออกแบบด้วยสไตล์ลอฟท์อินดัสเทรียล
                         ผนังปูนเปลือยผสานกับแสงสีนวลและงานไม้ ให้ความรู้สึกอบอุ่นและสงบ
                         เป็นที่พักผ่อนที่สมบูรณ์แบบใจกลางเมืองหลังจากเหนื่อยล้าจากการท่องเที่ยวเชียงใหม่
                     </p>
 
-                    <div class="room-meta-grid">
+                    <div id="room-meta" class="room-meta-grid">
                         <div class="room-meta-item">
                             <i class="fas fa-user-friends"></i>
                             <div>
@@ -124,7 +124,7 @@
                     </div>
 
                     <h3>สิ่งอำนวยความสะดวกในห้อง</h3>
-                    <div class="amenities-list">
+                    <div id="room-amenities" class="amenities-list">
                         <div class="amenity"><i class="fas fa-wifi"></i> ฟรี Wi-Fi ความเร็วสูง</div>
                         <div class="amenity"><i class="fas fa-tv"></i> แอลอีดี ทีวี 43"</div>
                         <div class="amenity"><i class="fas fa-snowflake"></i> เครื่องปรับอากาศ</div>
@@ -166,7 +166,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a href="index.html" class="logo">B2 SANTITHAM</a>
+                    <a href="index.html" class="logo">SANTITHAM</a>
                     <p style="margin-top: 15px;">สัมผัสประสบการณ์ที่ดีที่สุดในเชียงใหม่กับที่พักที่ทันสมัย สะดวกสบาย
                         และราคาสบายกระเป๋า</p>
                 </div>
@@ -189,12 +189,14 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 บีทู สันติธรรม เชียงใหม่. สงวนลิขสิทธิ์.</p>
+                <p>&copy; 2024 สันติธรรม เชียงใหม่. สงวนลิขสิทธิ์.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/room-data.js"></script>
+    <script src="js/room-detail.js"></script>
 </body>
 
 </html>
