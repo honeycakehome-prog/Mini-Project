@@ -50,26 +50,28 @@
         <div class="container">
             <!-- Filter Mockup -->
             <div style="margin-bottom: 40px; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-                <select
+                <select id="roomTypeFilter"
                     style="padding: 10px; border: 1px solid #ddd; border-radius: 4px; min-width: 150px; font-family: 'Prompt', sans-serif;">
-                    <option>ประเภทห้องพักทั้งหมด</option>
-                    <option>ซูพีเรีย</option>
-                    <option>ดีลักซ์</option>
-                    <option>สวีท</option>
+                    <option value="all">ประเภทห้องพักทั้งหมด</option>
+                    <option value="superior">ซูพีเรีย</option>
+                    <option value="deluxe">ดีลักซ์</option>
+                    <option value="suite">สวีท</option>
+                    <option value="family">ครอบครัว</option>
                 </select>
-                <select
+                <select id="guestFilter"
                     style="padding: 10px; border: 1px solid #ddd; border-radius: 4px; min-width: 150px; font-family: 'Prompt', sans-serif;">
-                    <option>จำนวนผู้เข้าพัก</option>
-                    <option>1 ท่าน</option>
-                    <option>2 ท่าน</option>
-                    <option>3 ท่าน</option>
+                    <option value="all">จำนวนผู้เข้าพัก</option>
+                    <option value="1">1 ท่าน</option>
+                    <option value="2">2 ท่าน</option>
+                    <option value="3">3 ท่าน</option>
+                    <option value="4">4 ท่าน</option>
                 </select>
-                <button class="btn" style="padding: 10px 30px;">ค้นหา</button>
+                <button id="searchBtn" class="btn" style="padding: 10px 30px;">ค้นหา</button>
             </div>
 
             <div class="room-grid">
                 <!-- Room 1 -->
-                <div class="room-card">
+                <div class="room-card" data-type="superior" data-guests="2">
                     <div class="room-img">
                         <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                             alt="Superior Room">
@@ -92,7 +94,7 @@
                 </div>
 
                 <!-- Room 2 -->
-                <div class="room-card">
+                <div class="room-card" data-type="deluxe" data-guests="2">
                     <div class="room-img">
                         <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                             alt="Deluxe Room">
@@ -114,7 +116,7 @@
                 </div>
 
                 <!-- Room 3 -->
-                <div class="room-card">
+                <div class="room-card" data-type="suite" data-guests="3">
                     <div class="room-img">
                         <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                             alt="Suite">
@@ -137,7 +139,7 @@
                 </div>
 
                 <!-- Room 4 -->
-                <div class="room-card">
+                <div class="room-card" data-type="family" data-guests="4">
                     <div class="room-img">
                         <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                             alt="Family Room">

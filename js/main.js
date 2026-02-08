@@ -39,4 +39,37 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         });
     });
+
+    // Room Search Functionality
+    const searchBtn = document.getElementById('searchBtn');
+    if (searchBtn) {
+        searchBtn.addEventListener('click', () => {
+            const roomTypeFilter = document.getElementById('roomTypeFilter');
+            const guestFilter = document.getElementById('guestFilter');
+
+            if (!roomTypeFilter || !guestFilter) return;
+
+            const roomType = roomTypeFilter.value;
+            const guests = guestFilter.value;
+            const roomCards = document.querySelectorAll('.room-card');
+
+            roomCards.forEach(card => {
+                const cardType = card.getAttribute('data-type');
+                const cardGuests = parseInt(card.getAttribute('data-guests') || '0');
+
+                const typeMatch = (roomType === 'all') || (roomType === cardType);
+
+                let guestMatch = true;
+                if (guests !== 'all') {
+                    guestMatch = cardGuests >= parseInt(guests);
+                }
+
+                if (typeMatch && guestMatch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    }
 });
